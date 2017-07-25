@@ -40,11 +40,14 @@ rangeOfThreeItems.firstValue = 6
 //如果创建了一个结构体的实例并将其赋值给一个常量， 则无法修改该实例的任何属性，即使有属性被声明为变量也不行
 let ohterRangeOfFourItems = FixedLengthRange(firstValue : 0, length : 4)
 
-//ohterRangeOfFourItems.firstValue = 6 // 尽管 firstValue 是个变量属性，这里还是会报错
+//ohterRangeOfFourItems.firstValue = 9//语法报错。
 
+//ohterRangeOfFourItems.firstValue = 6 // 尽管 firstValue 是个变量属性，这里还是会报错
+/********************************************************************************/
 //这种行为是由于结构体（struct）属于值类型。当值类型的实例被声明为常量的时候，它的所有属性也就成了常量。
 
 //属于引用类型的类（class）则不一样。把一个引用类型的实例赋给一个常量后，仍然可以修改该实例的变量属性。
+/********************************************************************************/
 
 
 
